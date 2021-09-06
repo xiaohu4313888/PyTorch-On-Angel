@@ -127,7 +127,7 @@ class NodeFeaturePartition(index: Int,
                            keys: Array[Long],
                            features: Array[IntFloatVector]) extends Serializable {
   def init(model: GNNPSModel, numBatch: Int): Unit =
-    model.initNodeFeatures(keys, features, numBatch)
+    model.initNodeFeatures(keys, features, numBatch)//初始化时候会调用init
 }
 
 private[gcn]

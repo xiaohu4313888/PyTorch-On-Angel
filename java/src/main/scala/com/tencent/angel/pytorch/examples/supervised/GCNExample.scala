@@ -57,7 +57,7 @@ object GCNExample {
     val evals = params.getOrElse("evals", "acc")
 
 
-    val gcn = new GCN()
+    val gcn = new GCN()//通过读取到的数据和模型创建一个GCN并初始化
     gcn.setTorchModelPath(torchModelPath)
     gcn.setFeatureDim(featureDim)
     gcn.setOptimizer(optimizer)

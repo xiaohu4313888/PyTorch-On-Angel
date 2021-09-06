@@ -190,6 +190,6 @@ def download_data():
 
 if __name__ == '__main__':
     # mix_train_test()
-    train_gcn()
+    train_sgcn()
     #train_sgcn()
     # download_data()
